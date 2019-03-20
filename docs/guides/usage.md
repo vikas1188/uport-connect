@@ -210,7 +210,7 @@ const reqID = 'myRequestID'
 // Opens request URL if on mobile client, or open QR code if on a desktop client
 connect.request(requestToken, reqId, {redirectUrl: 'http://otherapppage.com/page'})
 
-// Code now in 'http://otherapppage.com/page', for both desktop and mobile clients the response is returend here
+// Code now in 'http://otherapppage.com/page', for both desktop and mobile clients the response is returned here
 connect.onResponse(reqId).then(payload => {
   // Now handle specific to your use case, can be handled the same way for both desktop and mobile clients
 })
